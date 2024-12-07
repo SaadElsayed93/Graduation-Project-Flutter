@@ -12,7 +12,6 @@ void main() {
 }
 
 class CityApp extends StatelessWidget {
-  
   const CityApp({super.key});
 
   @override
@@ -33,7 +32,6 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   int currentIndex = 0;
-  
 
   final List<Widget> pages = [
     HomeScreen(),
@@ -54,34 +52,29 @@ class HomePageState extends State<HomePage> {
           backgroundColor: const Color(0xFF3D6643),
           elevation: 0,
           title: const Row(
-           
             mainAxisAlignment: MainAxisAlignment.center,
-           
-            
             children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
                   Text(
-                'مدينتنا',
-                
-                style: TextStyle(
-                  
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              Text(
-               'مرحباً بك .....',
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.white,
-                ),
-              ),
-              ],
-            )
+                    'مدينتنا',
+                    style: TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    'مرحباً بك .....',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
           actions: [
