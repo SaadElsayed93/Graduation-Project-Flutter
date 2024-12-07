@@ -56,7 +56,7 @@ class _CarouselWithIndicatorsState extends State<CarouselWithIndicators> {
     },
     {
       'url': 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-      'caption': '..'
+      'caption': 'Test'
     },
   ];
 
