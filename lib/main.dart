@@ -6,6 +6,7 @@ import 'screens/service_order_screen.dart';
 import 'screens/about.dart';
 import 'screens/notifications.dart';
 import 'screens/Profile.dart';
+import 'screens/login_page.dart';
 
 void main() {
   runApp(CityApp());
@@ -18,7 +19,7 @@ class CityApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
@@ -180,6 +181,19 @@ class HomePageState extends State<HomePage> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const Profile()));
               },
+              
+              
+            ),
+             ListTile(
+              leading: const Icon(Icons.person),
+              title: const Text('تسجيل الخروج'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const LoginPage()));
+              },
+              
+              
             ),
           ],
         ),
