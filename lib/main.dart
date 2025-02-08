@@ -25,7 +25,7 @@ class CityApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({super.key, required data});
 
   @override
   HomePageState createState() => HomePageState();
@@ -41,7 +41,7 @@ class HomePageState extends State<HomePage> {
     const ServiceOrderScreen(),
     AboutUs(),
     const Notifications(),
-    const Profile(),
+     Profile(),
   ];
 
   @override
@@ -179,10 +179,8 @@ class HomePageState extends State<HomePage> {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Profile()));
+                    MaterialPageRoute(builder: (context) => Profile()));
               },
-              
-              
             ),
              ListTile(
               leading: const Icon(Icons.person),
@@ -191,9 +189,7 @@ class HomePageState extends State<HomePage> {
                 Navigator.pop(context);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const LoginPage()));
-              },
-              
-              
+              } 
             ),
           ],
         ),
