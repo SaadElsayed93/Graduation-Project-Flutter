@@ -1,7 +1,6 @@
 import 'package:city/main.dart';
 import 'package:flutter/material.dart';
 
-
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -21,7 +20,10 @@ class _LoginPageState extends State<LoginPage> {
       // إذا كانت البيانات صحيحة، انتقل إلى الصفحة الرئيسية
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(
+            builder: (context) => const HomePage(
+                 
+                )),
       );
     }
   }
@@ -91,9 +93,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-         
-        ),
+        decoration: const BoxDecoration(),
         child: Center(
           child: SingleChildScrollView(
             child: Padding(
@@ -106,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Color(0xFF3D6643),
                     ),
                     textDirection: TextDirection.rtl,
                   ),

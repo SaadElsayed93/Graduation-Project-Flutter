@@ -23,8 +23,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "all": MessageLookupByLibrary.simpleMessage("الجميع"),
+        "appName": MessageLookupByLibrary.simpleMessage("اامدينتنا"),
+        "rejected": MessageLookupByLibrary.simpleMessage("المرفوضة"),
         "resolved": MessageLookupByLibrary.simpleMessage("تم حلها"),
         "sent": MessageLookupByLibrary.simpleMessage("المرسلة"),
-        "underreview": MessageLookupByLibrary.simpleMessage("المراجعة")
+        "underreview": MessageLookupByLibrary.simpleMessage("المراجعة"),
+        "welcome": MessageLookupByLibrary.simpleMessage("مرحباً بك .....")
       };
 }

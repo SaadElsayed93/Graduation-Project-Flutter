@@ -51,7 +51,7 @@ class HomePageState extends State<HomePage> {
     const ServiceOrderScreen(),
     AboutUs(),
     const Notifications(),
-    const Profile(),
+    Profile(),
   ];
 
   @override
@@ -62,7 +62,7 @@ class HomePageState extends State<HomePage> {
         child: AppBar(
           backgroundColor: const Color(0xFF3D6643),
           elevation: 0,
-          title: const Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
@@ -70,7 +70,8 @@ class HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'اامدينتنا',
+                    S.of(context).appName,
+                    //'اامدينتنا',
                     style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
@@ -78,7 +79,8 @@ class HomePageState extends State<HomePage> {
                     ),
                   ),
                   Text(
-                    'مرحباً بك .....',
+                    S.of(context).welcome,
+                    //'مرحباً بك .....',
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.white,
@@ -189,7 +191,7 @@ class HomePageState extends State<HomePage> {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Profile()));
+                    MaterialPageRoute(builder: (context) => Profile()));
               },
             ),
             ListTile(
