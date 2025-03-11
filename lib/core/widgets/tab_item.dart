@@ -24,27 +24,6 @@ class TabItem extends StatelessWidget {
           ),
           overflow: TextOverflow.ellipsis,
         ),
-        /* count > 0
-            ? Container(
-                margin: const EdgeInsets.only(right: 5),
-                padding: const EdgeInsets.all(3),
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 252, 250, 250),
-                  shape: BoxShape.circle,
-                ),
-                child: Center(
-                  child: Text(
-                    count > 9 ? "(9+)" : count.toString(),
-                    style: const TextStyle(
-                      color: Color.fromARGB(133, 9, 9, 9),
-                      fontSize: 12,
-                    ),
-                  ),
-                ))
-            : const SizedBox(
-                width: 0,
-                height: 0,
-              ),*/
       ],
     ));
   }

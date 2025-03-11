@@ -1,3 +1,4 @@
+import 'package:city/core/widgets/build_boxes.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -28,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             const CarouselWithIndicators(),
             const SizedBox(height: 20.0),
             // Services Section
-            _buildBoxesSection('الخدمات الحكومية'),
+            BuildBoxes(title: 'الخدمات الحكومية'),
             _buildBoxesSection('المشاكل'),
             _buildBoxesSection('طلب الخدمات'),
           ],

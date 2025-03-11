@@ -20,17 +20,6 @@ class TabBarViewItem extends StatelessWidget {
             itemBuilder: (context, index) {
               return Container(
                 child: CustomCard(request: requests[index]),
-
-                /*Card(
-                  margin: EdgeInsets.fromLTRB(14, 6, 14, 6),
-                  surfaceTintColor: Colors.grey,
-                  shadowColor: theme_color,
-                  elevation: 4,
-                  child: ListTile(
-                    title: Text(this.title),
-                    subtitle: const Text('Supporting text'),
-                  ),
-                ),*/
               );
             },
           );
