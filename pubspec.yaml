@@ -33,6 +33,8 @@ dependencies:
   carousel_slider: ^5.0.0
   font_awesome_flutter: ^10.8.0
   http: ^1.2.2
+  url_launcher: ^6.3.1
+  video_player: ^2.9.5
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -41,6 +43,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.17
+  numeral: ^3.0.0
 
 dev_dependencies:
   flutter_test:

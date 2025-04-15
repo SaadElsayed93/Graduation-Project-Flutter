@@ -12,8 +12,8 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.fromLTRB(14, 6, 14, 6),
-      surfaceTintColor: Colors.grey,
-      shadowColor: theme_color,
+      surfaceTintColor: MyColors.gray,
+      shadowColor: MyColors.themecolor,
       elevation: 4,
       child: ListTile(
         title: Text(request.serviceName),
